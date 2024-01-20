@@ -1,6 +1,6 @@
 ﻿namespace Diary.CORE
 {
-    public class Class1
+    public class Co
     {
 
     }
