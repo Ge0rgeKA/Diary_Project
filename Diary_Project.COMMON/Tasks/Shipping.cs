@@ -12,5 +12,9 @@ namespace Diary_Project.COMMON.Tasks
         decimal Price {  get; set; }
         PaymentStatus PaymentStatus { get; set; }
         CarriageStatus CarriageStatus {  get; set; }
+
+        int SupplierId {  get; set; }
+        int CarrierId {  get; set; }
+        int WarehouseId {  get; set; }
     }
 }
