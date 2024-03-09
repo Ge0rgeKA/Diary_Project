@@ -10,7 +10,7 @@ namespace Diary_Project.COMMON.Enums
     {
         SearchingAuto = 0,
         WaitingLoading,
-        Passing,
+        InTransit,
         Arrived
     }
 }
