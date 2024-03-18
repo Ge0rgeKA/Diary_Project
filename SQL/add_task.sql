@@ -1,4 +1,4 @@
-CREATE PROCEDURE AddTask(
+CREATE PROCEDURE add_task(
 	_name varchar(128),
 	_priority integer,
 	_startDate date,
@@ -6,6 +6,6 @@ CREATE PROCEDURE AddTask(
 	_comment text)
 LANGUAGE SQL
 AS $$
-INSERT INTO Task(Name, Priority, StartDate, EndDate, Comment)
+INSERT INTO task(Name, Priority, StartDate, EndDate, Comment)
 VALUES(_name, _priority, _startDate, _endDate, _comment)
 $$;

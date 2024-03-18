@@ -1,4 +1,4 @@
-CREATE PROCEDURE AddShipping(
+CREATE PROCEDURE add_shipping(
 	_name varchar(128),
 	_supplierId bigint,
 	_carrierId bigint,
@@ -10,6 +10,6 @@ CREATE PROCEDURE AddShipping(
 	_comment text)
 LANGUAGE SQL
 AS $$
-INSERT INTO Shipping(Name, SupplierId, CarrierId, StartDate, EndDate, Price, CarriageStatus, PaymentStatus, Comment)
+INSERT INTO shipping(Name, SupplierId, CarrierId, StartDate, EndDate, Price, CarriageStatus, PaymentStatus, Comment)
 VALUES(_name, _supplierId, _carrierId, _startDate, _endDate, _price, _carriageStatus, _paymentStatus, _comment)
 $$;

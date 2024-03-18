@@ -1,4 +1,4 @@
-CREATE TABLE Shipping(
+CREATE TABLE shipping(
 Id bigint PRIMARY KEY,
 Name varchar(128) NOT NULL,
 SupplierId bigint REFERENCES Supplier(Id),
