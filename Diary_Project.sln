@@ -11,17 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "COMMON", "COMMON", "{6A5D85
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layers", "Presentation Layers", "{E8AC44CC-0D30-4C51-9369-6B861A6F1A1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diary_Project.PL.API", "Diary_Project.PL.API\Diary_Project.PL.API.csproj", "{9CBA705E-A8CE-4499-9540-A7D3E7ACE70E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diary_Project.PL.API", "Diary_Project.PL.API\Diary_Project.PL.API.csproj", "{9CBA705E-A8CE-4499-9540-A7D3E7ACE70E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diary_Project.DAL.Contracts", "Diary_Project.DAL.Contracts\Diary_Project.DAL.Contracts.csproj", "{BC0C90BA-9EC8-457F-906E-02CB20C639FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diary_Project.DAL.Contracts", "Diary_Project.DAL.Contracts\Diary_Project.DAL.Contracts.csproj", "{BC0C90BA-9EC8-457F-906E-02CB20C639FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diary_Project.DAL", "Diary_Project.DAL\Diary_Project.DAL.csproj", "{0ABD8B8D-7CB0-4B50-9848-7A5CC804995B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diary_Project.DAL", "Diary_Project.DAL\Diary_Project.DAL.csproj", "{0ABD8B8D-7CB0-4B50-9848-7A5CC804995B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diary_Project.COMMON", "Diary_Project.COMMON\Diary_Project.COMMON.csproj", "{72B412EF-6C43-46EA-AE99-528A9AB3EC5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diary_Project.COMMON", "Diary_Project.COMMON\Diary_Project.COMMON.csproj", "{72B412EF-6C43-46EA-AE99-528A9AB3EC5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diary_Project.BLL", "Diary_Project.BLL\Diary_Project.BLL.csproj", "{33491A73-DAB8-452E-B5B8-34F06EA79A83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diary_Project.BLL", "Diary_Project.BLL\Diary_Project.BLL.csproj", "{33491A73-DAB8-452E-B5B8-34F06EA79A83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diary_Project.BLL.Contracts", "Diary_Project.BLL.Contracts\Diary_Project.BLL.Contracts.csproj", "{923A146B-2EA9-48DD-838A-FE4C7B0E6887}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diary_Project.BLL.Contracts", "Diary_Project.BLL.Contracts\Diary_Project.BLL.Contracts.csproj", "{923A146B-2EA9-48DD-838A-FE4C7B0E6887}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiAuth", "ApiAuth\ApiAuth.csproj", "{5D369AA4-66C6-4D1B-84DB-24FC00803A11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{923A146B-2EA9-48DD-838A-FE4C7B0E6887}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{923A146B-2EA9-48DD-838A-FE4C7B0E6887}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{923A146B-2EA9-48DD-838A-FE4C7B0E6887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D369AA4-66C6-4D1B-84DB-24FC00803A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D369AA4-66C6-4D1B-84DB-24FC00803A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D369AA4-66C6-4D1B-84DB-24FC00803A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D369AA4-66C6-4D1B-84DB-24FC00803A11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{72B412EF-6C43-46EA-AE99-528A9AB3EC5A} = {6A5D85C8-5053-41AB-ABEF-CD85A95D386C}
 		{33491A73-DAB8-452E-B5B8-34F06EA79A83} = {C62B54B7-11F7-46F4-9AB1-F1AA4537EF74}
 		{923A146B-2EA9-48DD-838A-FE4C7B0E6887} = {C62B54B7-11F7-46F4-9AB1-F1AA4537EF74}
+		{5D369AA4-66C6-4D1B-84DB-24FC00803A11} = {E8AC44CC-0D30-4C51-9369-6B861A6F1A1D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74D58E5B-983E-4B49-8A11-D45A36745A8E}
