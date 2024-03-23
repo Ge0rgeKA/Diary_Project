@@ -1,7 +1,7 @@
 ﻿namespace ApiAuth.Models
 {
     // 1. Этот класс будет описывать учетные записи пользователей в приложении.
-    public class Person
+    public class User
     {
         public string Login { get; set; }
         public string Password { get; set; }
