@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Diary_Project.COMMON.Tasks
 {
-    public class Delivery : Task
+    public class Delivery : TaskInputModel
     {
         decimal Price {  get; set; }
         PaymentStatus PaymentStatus { get; set; }

@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Diary_Project.COMMON\Diary_Project.COMMON.csproj" />
+    <ProjectReference Include="..\Diary_Project.DAL.Contracts\Diary_Project.DAL.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>

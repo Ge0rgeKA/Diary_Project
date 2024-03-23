@@ -2,7 +2,7 @@
 
 namespace Diary_Project.COMMON.Tasks
 {
-    public class Task : ATask
+    public class TaskInputModel : ATask
     {
         Priority Priority { get; set; }
         DateTime StartDate { get; set; }
