@@ -16,6 +16,11 @@ namespace Diary_Project.BLL.User
             _logger = logger;
         }
 
+        public Task CreatAsync(UserInputModel UserInputModel)
+        {
+            throw new NotImplementedException();
+        }
+
         #region PublicMethod
         public async Task CreateAsync(UserInputModel userInputModel)
         {
