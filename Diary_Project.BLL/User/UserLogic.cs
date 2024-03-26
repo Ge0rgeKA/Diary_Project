@@ -16,11 +16,6 @@ namespace Diary_Project.BLL.User
             _logger = logger;
         }
 
-        public Task CreatAsync(UserInputModel UserInputModel)
-        {
-            throw new NotImplementedException();
-        }
-
         #region PublicMethod
         public async Task CreateAsync(UserInputModel userInputModel)
         {
@@ -46,7 +41,7 @@ namespace Diary_Project.BLL.User
         }
         #endregion
 
-        //Проверка заполнения данных юзера при вводе "на сайте"
+        //Валидатор Юзера - Проверка заполнения данных юзера при вводе "на сайте"
         #region PrivateMethod
         private bool ValidateUser(UserInputModel user)
         {
@@ -54,28 +49,28 @@ namespace Diary_Project.BLL.User
             string validateInfo = string.Empty;
             if (string.IsNullOrEmpty(user.Password) || user.Password.Length <= 5)
             {
-                validateInfo += "Пароль не должен быть пустым и не меньше 5 символов";
+                validateInfo += "Пароль не должен быть пустым и не меньше 5 символов; ";
             }
 
             if (string.IsNullOrEmpty(user.Email))
             {
-                validateInfo += "Email не должен быть пустым";
+                validateInfo += "Email не должен быть пустым; ";
             }
 
             if (string.IsNullOrEmpty(user.FirstName))
             {
-                validateInfo += "Имя не должно быть пустым";
+                validateInfo += "Имя не должно быть пустым; ";
             }
 
             if (string.IsNullOrEmpty(user.LastName))
             {
-                validateInfo += "Фамилия не должна быть пустой";
+                validateInfo += "Фамилия не должна быть пустой; ";
             }
 
             if (!string.IsNullOrEmpty(validateInfo))
             {
                 _logger.LogError(validateInfo);
-                throw new Exception("Неверно заполнены поля");
+                throw new Exception("Неверно заполнены поля; ");
             }
             return true;
         }

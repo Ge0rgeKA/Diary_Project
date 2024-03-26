@@ -1,5 +1,7 @@
 ﻿using Diary_Project.COMMON.Entities.User;
 using Diary_Project.DAL.Contracts.User;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,12 +25,12 @@ namespace Diary_Project.DAL.User
         {
             try
             {
-                await _dbContext.User.AddAsync(user);
+                await _dbContext.Users.AddAsync(user);
                 await _dbContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex.Massage);
+                _logger.LogError(ex.Message);
             }
         }
 

@@ -1,24 +1,24 @@
-﻿using Diary_Project.BLL.Contracts.Tasks;
-using Diary_Project.COMMON.Tasks;
-using Diary_Project.DAL.Contracts.Tasks;
+﻿using Diary_Project.BLL.Contracts.Charge;
+using Diary_Project.COMMON.Charge;
+using Diary_Project.DAL.Contracts.Charge;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Diary_Project.BLL.Taska
+namespace Diary_Project.BLL.Charge
 {
-    public class TaskLogic : ITaskLogic
+    public class ChargeLogic : IChargeLogic
     {
         private readonly ITaskRepository _taskRepository;
 
-        public TaskLogic(ITaskRepository taskRepository)
+        public ChargeLogic(ITaskRepository taskRepository)
         {
             _taskRepository = taskRepository;
         }
 
-        public void Create(TaskInputModel task)
+        public void Create(ChargeInputModel task)
         {
             _taskRepository.Add(task);
         }

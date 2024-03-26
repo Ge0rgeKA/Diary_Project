@@ -13,7 +13,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Diary_Project.BLL.Contracts\Diary_Project.BLL.Contracts.csproj" />
+    <ProjectReference Include="..\Diary_Project.BLL\Diary_Project.BLL.csproj" />
     <ProjectReference Include="..\Diary_Project.COMMON\Diary_Project.COMMON.csproj" />
+    <ProjectReference Include="..\Diary_Project.DAL\Diary_Project.DAL.csproj" />
   </ItemGroup>
 
 </Project>

@@ -29,7 +29,7 @@ namespace ApiAuth.Controllers
 
         [HttpGet("{id}")]
 
-        public async Task<IAtionResult> Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
             return Ok(await _userLogic.GetByIdAsync(id));
         }

@@ -1,18 +1,18 @@
 ﻿using Microsoft.Data.SqlClient;
-using Diary_Project.COMMON.Tasks;
-using Diary_Project.DAL.Contracts.Task;
+using Diary_Project.COMMON.Charge;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Diary_Project.DAL.Contracts.Charge;
 
-namespace Diary_Project.DAL.Task
+namespace Diary_Project.DAL.Charge
 {
     public class TaskRepository : ITaskRepository
     {
-        public void Add(TaskInputModel task)
+        public void Add(ChargeInputModel task)
         {
             string connectionString = "Data Source=sqlsrv;Initial Catalog=Diary;User ID=student;Password=1;Encrypt=False;Trusted_Connection=True";
 
