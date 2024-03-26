@@ -1,8 +1,8 @@
 ﻿using Diary_Project.COMMON.Enums;
 
-namespace Diary_Project.COMMON.Tasks
+namespace Diary_Project.COMMON.Charge
 {
-    public class TaskInputModel : ATask
+    public class ChargeInputModel : ACharge
     {
         Priority Priority { get; set; }
         DateTime StartDate { get; set; }
